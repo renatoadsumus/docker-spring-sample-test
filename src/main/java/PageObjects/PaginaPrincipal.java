@@ -17,10 +17,11 @@ public class PaginaPrincipal {
 		System.setProperty("webdriver.chrome.driver", diretorioChromeDriver);
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		String url ="http://jenkins-renato.us-east-1.elasticbeanstalk.com:8080/";
 
-		driver.get("http://jenkins-renato.us-east-1.elasticbeanstalk.com:8080/");	
-		
-		
+		System.out.println("Abrindo a Pagina..:  " + url);	
+
+		driver.get(url);			
 		
 		String conteudoPagina = driver.getPageSource();
 		
