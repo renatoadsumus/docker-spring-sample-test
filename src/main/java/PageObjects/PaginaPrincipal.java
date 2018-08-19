@@ -12,7 +12,8 @@ public class PaginaPrincipal {
 	public String abrirPaginaPrincipal()
 	{
 		System.out.print("ChromeDriverr\n");
-		String diretorioChromeDriver = "C:\\web-drivers\\chromedriver.exe";
+		String 	diretorioChromeDriver = "/opt/web-driver/chromedriver";
+		//String diretorioChromeDriver = "C:\\web-drivers\\chromedriver.exe";
 		System.setProperty("webdriver.chrome.driver", diretorioChromeDriver);
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
