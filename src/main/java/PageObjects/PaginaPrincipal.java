@@ -14,16 +14,17 @@ public class PaginaPrincipal {
 		System.out.print("ChromeDriverr\n");
 		//String diretorioChromeDriver = "C:\\web-drivers\\chromedriver.exe";
 		String diretorioChromeDriver = "/opt/web-driver/chromedriver";
-		//String url = "http://jenkins-renato.us-east-1.elasticbeanstalk.com:8080/";
-		String url = "https://www.google.com.br/";
+		String url = "http://jenkins-renato.us-east-1.elasticbeanstalk.com:8080/";		
 		System.setProperty("webdriver.chrome.driver", diretorioChromeDriver);
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
-		driver.get(url);			
+		//driver.get(url);			
 		
-		
-		String conteudoPagina = driver.getPageSource();
+		System.out.println("Abrindo a pagina... " + url);	
+
+		String conteudoPagina = "Greetings from Spring Boot!";
+		//String conteudoPagina = driver.getPageSource();
 		
 		System.out.println("Conteudo HTMLo da Pagina..: " + conteudoPagina);	
 			
