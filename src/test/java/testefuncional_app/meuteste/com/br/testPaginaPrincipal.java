@@ -25,7 +25,7 @@ public class testPaginaPrincipal {
 	@After // tearDown()
     public void after() throws Exception {
         System.out.println("Fechando o Browser");
-        paginaPrincipal.fechar();
+        //paginaPrincipal.fechar();
         
 	}
 
