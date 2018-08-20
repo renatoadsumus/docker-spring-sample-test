@@ -12,24 +12,23 @@ public class PaginaPrincipal {
 	public String abrirPaginaPrincipal()
 	{
 		System.out.print("ChromeDriverr\n");
-		String 	diretorioChromeDriver = "/opt/web-driver/chromedriver";
 		//String diretorioChromeDriver = "C:\\web-drivers\\chromedriver.exe";
+		String diretorioChromeDriver = "/opt/web-driver";
+		//String url = "http://jenkins-renato.us-east-1.elasticbeanstalk.com:8080/";
+		String url = "https://www.google.com.br/";
 		System.setProperty("webdriver.chrome.driver", diretorioChromeDriver);
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		String url ="http://app-itau-desafio.us-east-1.elasticbeanstalk.com/";
-
-		System.out.println("Abrindo a Pagina..:  " + url);	
 
 		driver.get(url);			
+		
 		
 		String conteudoPagina = driver.getPageSource();
 		
 		System.out.println("Conteudo HTMLo da Pagina..: " + conteudoPagina);	
 			
 		
-		return conteudoPagina;
-		
+		return conteudoPagina;	
 		
 		
 	}
