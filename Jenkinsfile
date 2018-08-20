@@ -6,7 +6,7 @@ pipeline {
 		stage('Teste Funcional') { 
 			steps {				
 				echo "Executando Teste Funcional"
-				sh "docker run --rm -v /opt/jenkins/workspace/teste_funcional_app:/codigo_teste_com_selenium_webdriver -e 'MVN_OPTS=-Dtest=testPaginaPrincipal' renatoadsumus/chrome_standart:latest /bin/bash"
+				sh "docker run --rm -v /opt/jenkins/workspace/teste_funcional_app:/codigo_teste_com_selenium_webdriver -e 'MVN_OPTS=-Dtest=testPaginaPrincipal' renatoadsumus/chrome_standart:latest"
 			}			
 		}
 		        
