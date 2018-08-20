@@ -13,7 +13,7 @@ public class PaginaPrincipal {
 	{
 		System.out.print("ChromeDriverr\n");
 		//String diretorioChromeDriver = "C:\\web-drivers\\chromedriver.exe";
-		String diretorioChromeDriver = "/opt/web-driver";
+		String diretorioChromeDriver = "/opt/web-driver/chromedriver";
 		//String url = "http://jenkins-renato.us-east-1.elasticbeanstalk.com:8080/";
 		String url = "https://www.google.com.br/";
 		System.setProperty("webdriver.chrome.driver", diretorioChromeDriver);
