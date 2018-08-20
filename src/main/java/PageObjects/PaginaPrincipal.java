@@ -17,7 +17,7 @@ public class PaginaPrincipal {
 		System.setProperty("webdriver.chrome.driver", diretorioChromeDriver);
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		String url ="http://jenkins-renato.us-east-1.elasticbeanstalk.com:8080/";
+		String url ="http://app-itau-desafio.us-east-1.elasticbeanstalk.com/";
 
 		System.out.println("Abrindo a Pagina..:  " + url);	
 
